@@ -3,7 +3,7 @@
 type Seat = { Row: int; Col: int; IsReserved: bool }
 
 type SeatManager() =
-    // Initialize immutable seating layout as a list of seats
+    
     let initializeLayout rows cols =
         [ for row in 0 .. rows - 1 do
             for col in 0 .. cols - 1 do
