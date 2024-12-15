@@ -18,6 +18,8 @@ type CinemaForm(seatManager: SeatManager, ticketManager: TicketManager, showtime
         showtimeDropdown.SelectedIndex <- 0
         showtimes |> Array.iter (fun showtime -> seatManager.InitializeShowtime(showtime, rows, cols))
 
+
+
     // Calculate the starting position to center the grid
     let calculateGridStartPosition (gridWidth: int, gridHeight: int, panelWidth: int, panelHeight: int) =
         let startX = max 0 ((panelWidth - gridWidth) / 2)
